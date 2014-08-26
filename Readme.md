@@ -44,4 +44,4 @@ I wrote this code for fun on my 22nd Birthday (25 August 2014). It was one of th
 Credits
 -------
 Idea inspired from a post on quora: http://www.quora.com/What-are-the-best-Python-scripts-youve-ever-written
-The code in that post uses FQL which deprecated after v2.1. I have simply writen the code using Facebook Graph API.
+The code in that post uses FQL which is deprecated after v2.1. This implementation uses Facebook Graph API.
