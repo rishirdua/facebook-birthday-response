@@ -5,7 +5,7 @@ Python script that automatically thanks all users and like their birthday wishes
 
 Author
 ------
-Rishi Dua <http://github.com/rishirdua>
+Rishi Dua <rishirdua@gmail.com>
 
 
 How to use
@@ -40,3 +40,8 @@ This project is licensed under the terms of the MIT license. See LICENCE.txt for
 Discalimer
 ----------
 I wrote this code for fun on my 22nd Birthday (25 August 2014). It was one of the best birthdays thanks to friends and every birthday wish means a lot. My blog has a post about it.
+
+Credits
+-------
+Idea inspired from a post on quora: http://www.quora.com/What-are-the-best-Python-scripts-youve-ever-written
+The code in that post uses FQL which deprecated after v2.1. I have simply writen the code using Facebook Graph API.
