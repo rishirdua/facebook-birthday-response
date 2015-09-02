@@ -65,7 +65,7 @@ def get_posts(url, wishes=None):
         return wishes
     else:
         print url
-        req = requests.get(url)
+        req = requests.get(url, proxies=proxy_dict)
         if req.status_code == 200:
             
             content = req.json()
@@ -133,8 +133,8 @@ if __name__ == '__main__':
                 reply = choice(message_set)
                 print 'Replying %s to %s' % (reply, wish['from'])
                 url = 'https://graph.facebook.com/%s/comments?access_token=%s' % (wish['id'], access_token)
-                requests.post(url, data={'message': reply})
+                requests.post(url, data={'message': reply}, proxies=proxy_dict)
 
             if like:
                 url = 'https://graph.facebook.com/%s/likes?access_token=%s' % (wish['id'], access_token)
-                requests.post(url, data="")
+                requests.post(url, data="", proxies=proxy_dict)
