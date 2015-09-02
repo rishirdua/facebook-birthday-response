@@ -30,7 +30,7 @@ message_set = ['Thank you very much', 'Thanks a lot', 'Thank you!']
 use_filter = True
 
 #keywords to respond to. Comment only on posts containing at lease one of these words
-bdaywords = ["happy", "bday", "b'day", "birthday", "wish", "returns", "cumpleaños","anniversaire","compleanno","Geburtstag","natalis"]
+bdaywords = ["happy", "bday", "b\'day", "birthday", "wish", "returns", u"cumpleaños".encode("utf-8"),"anniversaire","compleanno","Geburtstag","natalis"]
 
 #proxy settings
 http_proxy = "https://proxy61.iitd.ernet.in:3128"
@@ -65,7 +65,7 @@ def get_posts(url, wishes=None):
         return wishes
     else:
         print url
-        req = requests.get(url, proxies=proxy_dict)
+        req = requests.get(url)
         if req.status_code == 200:
             
             content = req.json()
@@ -133,8 +133,8 @@ if __name__ == '__main__':
                 reply = choice(message_set)
                 print 'Replying %s to %s' % (reply, wish['from'])
                 url = 'https://graph.facebook.com/%s/comments?access_token=%s' % (wish['id'], access_token)
-                requests.post(url, data={'message': reply}, proxies=proxy_dict)
+                requests.post(url, data={'message': reply})
 
             if like:
                 url = 'https://graph.facebook.com/%s/likes?access_token=%s' % (wish['id'], access_token)
-                requests.post(url, data="", proxies=proxy_dict)
+                requests.post(url, data="")
