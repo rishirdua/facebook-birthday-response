@@ -30,7 +30,7 @@ message_set = ['Thank you very much', 'Thanks a lot', 'Thank you!']
 use_filter = True
 
 #keywords to respond to. Comment only on posts containing at lease one of these words
-bdaywords = ["happy", "bday", "birthday", "wish", "returns"]
+bdaywords = ["happy", "bday", "b\'day", "birthday", "wish", "returns", u"cumpleaños".encode("utf-8"),"anniversaire","compleanno","Geburtstag","natalis"]
 
 #proxy settings
 http_proxy = "https://proxy61.iitd.ernet.in:3128"
