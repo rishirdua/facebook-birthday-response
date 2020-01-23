@@ -16,8 +16,8 @@ Configure parameters and run the script:
 - like: set true to like posts on your wall
 - comment: set true to comment thank you
 - message_set: the list of messages from which you want a random message to be selected
-- use_filter: if false, repies to every message. Make it false if you are sure every wish posted on your wall is a birthday message
-- bdaywords: keywords to respond to. Comment only on posts containing at lease one of these words
+- use_filter: if false, replies to every message. Make it false if you are sure every wish posted on your wall is a birthday message
+- bdaywords: keywords to respond to. Comment only on posts containing at least one of these words
 - proxy settings: proxy settings if you are behind a proxy server
 
 
@@ -37,7 +37,7 @@ License
 This project is licensed under the terms of the MIT license. See LICENCE.txt for details
 
 
-Discalimer
+Disclaimer
 ----------
 I wrote this code for fun on my 22nd Birthday (25 August 2014). It was one of the best birthdays thanks to friends and every birthday wish means a lot. My blog has a post about it.
 
